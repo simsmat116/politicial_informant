@@ -26,7 +26,5 @@ ec2-3-15-8-136.us-east-2.compute.amazonaws.com
 For anyone unfamiliar with AWS:
 - go to aws.amazon.com
 - log in using these credentials
-user: arjunsr@umich.edu
-pw: ArjunEshani$ha
 - click on services -> EC2
 - click on the button that says instances, and it will open the dashboard with the aws instances i have. from there, find the one for political informant, and u can right click and either start or stop the instance
