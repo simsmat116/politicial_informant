@@ -1,0 +1,15 @@
+Backend Documentation
+EECS 498 Team 1- Political Informant
+arjunsr, cjenn, simsmat, abunt, edknight, amarur
+
+This project is hosted on an Amazon EC2 instance. Start up an EC2 instance through AWS and save the key that is generated into your home directory of the project. Instructions for setting up the instance can be found here: https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html . Use this to ssh into the AWS instance through your CLI using 'ssh -i <Key name> ubuntu@<Public DNS name of EC2 Instance>'.
+
+When you are creating the Clinc Instance using the file provided, you will want to ensure that the business logic endpoints for the following competencies are defined: query_candidate_info, query_polling_info, query_polling places, and registration_state_info. The endpoint should look something along the lines of http://ec2-3-21-230-254.us-east-2.compute.amazonaws.com/ . 
+
+The project uses a Python virtual environment and in order create this your will need venv. To install this run 'pip install venv' in your terminal. Install a virtual environment using 'python3 -m venv env' into the home directory of the project. Make sure to run source env/bin/activate whenever beginning work in the CLI of this directory.
+
+Once within the virtual environment, install all Python libraries needed for the project. To do this, you can run 'pip install -r requirements.txt' when you are in the home directory.
+
+In order to setup the sqlite database, navigate to the 'template/bin' directory using this command line prompt 'cd template/bin/'/ You can create the database in this directory using the following command './politicalinformantdb.sh create'. (You can also reset the database by replacing create with reset). Now, everything should be setup for the backend. Navigate back to the home directory 'cd ../..'.
+
+Within an SSH'd terminal window of the Amazon EC2 instance, run 'python3 run.py'. This command will start up the application on the EC2 server. Using the public DNS from the EC2 instance in your preferred web browser should display a working application at this point. Please do not forget to setup the business logic endpoints, as this is critical for most of the functionality of the application. 

@@ -1,0 +1,9 @@
+Front-end Documentation
+EECS 498 Team 1- Political Informant
+arjunsr, cjenn, simsmat, abunt, edknight, amarur
+
+In order to setup the front-end, you will need Node Project Manager (npm). This can be install using the following link: https://nodejs.org/en/download/ . Be sure to select the appropriate installer. (As an aside, if you use homebrew, this process can be made easier by running 'brew install node' in your terminal). To ensure a successful installation, you can run 'node -v' and 'npm -v' to check the current versions for both node and npm.
+
+Once this is done, navigate to the 'static' subdirectory (political_informant/template/static) which contains the webpack config file. Run the command 'npm run build'. This will start and refresh the front end React JSX code to be rendered to the user, and ensure that the most recent version of the website is being shown. 
+
+After this is done, and the backend startup has been finished, the application should be working with expected behavior.

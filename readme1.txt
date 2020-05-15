@@ -1,0 +1,7 @@
+readme1.txt
+EECS 498 Team 1- Political Informant
+arjunsr, cjenn, simsmat, abunt, edknight, amarur
+
+This document is a summary of Political informant and the components that make it up. Political informant is a web assistant meant to inform its users about various topics of the 2020 political election. This project offers a few functionalities that we focused on for the users needs. Political informant can tell the user about voter registration information, specific candidate stances on a number of issues, and finally, information about how each candidate is doing in the polls. 
+
+The project is built on Python with Flask, as well as React Js that renders our UI. In the backend, we also have a SQL DB that contains information about candidate stance and some voter registration information, allowing for quick DB retrieval to respond to some user queries. The whole platform is connected to Clinc, which handles the intent detection and NLP under the hood. From a user standpoint, input is fed in through a chat box and routed to the Clinc platform. From there, the intent is passed along to our backend Python and Flask code, and any necessary DB queries are carried out. The result of this computation determines a response that the user will receive in the chat interface.
